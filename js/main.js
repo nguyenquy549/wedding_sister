@@ -112,6 +112,17 @@
             }
         }
     });
+    // CountDown
+    var date = new Date(2022, 5, 8);
+    var now = new Date();
+    var diff = (date.getTime()/1000) - (now.getTime()/1000);
+    $('.clock').FlipClock(diff,{
+        clockFace: 'DailyCounter',
+        countdown: true
+    }); 
     
 })(jQuery);
 
+const buttonSubmit = () => {
+    console.log("alo")
+}
