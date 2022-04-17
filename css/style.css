@@ -533,6 +533,10 @@ mark,
   max-width: 300px;
   height: 300px;
 }
+.img-bank {
+  max-width: 200px;
+  height: 200px;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #FFFFFF;

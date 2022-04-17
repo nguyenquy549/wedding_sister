@@ -121,6 +121,10 @@
     clockFace: "DailyCounter",
     countdown: true,
   });
+  $(".clock-1").FlipClock(diff, {
+    clockFace: "DailyCounter",
+    countdown: true,
+  });
 })(jQuery);
 
 const buttonSubmit = () => {
