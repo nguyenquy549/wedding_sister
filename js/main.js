@@ -133,6 +133,12 @@ const buttonSubmit = () => {
   var guest = document.getElementById("submit_guest").value;
   var events = document.getElementById("submit_events").value;
   var message = document.getElementById("submit_Message").value;
+  if (name !== "") {
+    document.getElementById("invation-container-id").style.display =
+      "inline-block";
+    var id_invation = (document.getElementById("invation-id").innerHTML =
+      name + " +");
+  }
   if (name === "" || email === "") return;
   var data = {
     name,

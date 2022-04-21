@@ -73,4 +73,21 @@
     color: #ffffff;
     background: #e47a2e;
   }
-  
+ 
+  /* Invation */
+
+
+
+.invation-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  display: none;
+}
+.invation-top-right {
+  position: absolute;
+  top: 21%;
+  right: 20%;
+  color: black;
+  font-size: 3vw;
+}
