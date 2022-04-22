@@ -127,7 +127,7 @@
   });
 })(jQuery);
 
-const buttonSubmit = () => {
+const buttonSubmit = async () => {
   var name = document.getElementById("submit_nameInput").value;
   var email = document.getElementById("submit_emailInput").value;
   var guest = document.getElementById("submit_guest").value;
@@ -147,9 +147,17 @@ const buttonSubmit = () => {
     events,
     message,
   };
-  postData("http://localhost:4321/wedding/register", data).then((ret) => {
+  try {
+    let ret = await postData(
+      "http://dev.combros.tech:4321/wedding/register",
+      data
+    );
     console.log(ret); // JSON data parsed by `data.json()` call
-  });
+  } catch (error) {
+    postData("http://localhost:4321/wedding/register", data).then((ret) => {
+      console.log(ret); // JSON data parsed by `data.json()` call
+    });
+  }
 };
 
 async function postData(url = "", data = {}) {
