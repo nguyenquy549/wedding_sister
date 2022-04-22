@@ -149,12 +149,12 @@ const buttonSubmit = async () => {
   };
   try {
     let ret = await postData(
-      "http://dev.combros.tech:4321/wedding/register",
+      "http://dev.combros.tech:1234/wedding/register",
       data
     );
     console.log(ret); // JSON data parsed by `data.json()` call
   } catch (error) {
-    postData("http://localhost:4321/wedding/register", data).then((ret) => {
+    postData("http://localhost:1234/wedding/register", data).then((ret) => {
       console.log(ret); // JSON data parsed by `data.json()` call
     });
   }
