@@ -114,7 +114,7 @@
     },
   });
   // CountDown
-  var date = new Date(2022, 4, 8);
+  var date = new Date(2023, 5, 14);
   var now = new Date();
   var diff = date.getTime() / 1000 - now.getTime() / 1000;
   $(".clock").FlipClock(diff, {
