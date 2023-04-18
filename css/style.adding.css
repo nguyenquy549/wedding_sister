@@ -45,7 +45,7 @@
   
   #clock .flip-clock-label {
     top: -35px;
-    color: #e47a2e;
+    color: #ff4274;
     font-size: 25px;
   }
   
@@ -66,12 +66,12 @@
   }
   
   #clock .flip-clock-dot {
-    background: #e47a2e;
+    background: #ff4274;
   }
   
   .flip-clock-wrapper ul li a div div.inn {
     color: #ffffff;
-    background: #e47a2e;
+    background: #ff4274;
   }
  
   /* Invation */
