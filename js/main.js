@@ -114,7 +114,7 @@
     },
   });
   // CountDown
-  var date = new Date(2023, 5, 14);
+  var date = new Date(2023, 5, 8);
   var now = new Date();
   var diff = date.getTime() / 1000 - now.getTime() / 1000;
   $(".clock").FlipClock(diff, {
@@ -136,8 +136,10 @@ const buttonSubmit = async () => {
   if (name !== "") {
     document.getElementById("invation-container-id").style.display =
       "inline-block";
+    document.getElementById("invation-picture-id").src = `http://127.0.0.1:5501/img/invation_${events}.jpg`;
     var id_invation = (document.getElementById("invation-id").innerHTML =
       name + " +");
+
   }
   if (name === "" || email === "") return;
   var data = {
