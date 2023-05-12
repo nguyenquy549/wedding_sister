@@ -136,7 +136,7 @@ const buttonSubmit = async () => {
   if (name !== "") {
     document.getElementById("invation-container-id").style.display =
       "inline-block";
-    document.getElementById("invation-picture-id").src = `http://127.0.0.1:5501/img/invation_${events}.jpg`;
+    document.getElementById("invation-picture-id").src = `./img/invation_${events}.jpg`;
     var id_invation = (document.getElementById("invation-id").innerHTML =
       name + " +");
 
@@ -151,7 +151,7 @@ const buttonSubmit = async () => {
   };
   try {
     let ret = await postData(
-      "http://dev.combros.tech:1234/wedding/register",
+      "http://wedding.iotqn.online:1234/wedding/register",
       data
     );
     console.log(ret); // JSON data parsed by `data.json()` call
