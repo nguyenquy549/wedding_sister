@@ -151,7 +151,7 @@ const buttonSubmit = async () => {
   };
   try {
     let ret = await postData(
-      "http://wedding.iotqn.online:1234/wedding/register",
+      "https://wedding.iotqn.online/wedding/register",
       data
     );
     console.log(ret); // JSON data parsed by `data.json()` call
