@@ -10,6 +10,7 @@
     }
   });
 
+
   // Smooth scrolling on the navbar links
   $(".navbar-nav a").on("click", function (event) {
     if (this.hash !== "") {
@@ -127,6 +128,8 @@
   });
 })(jQuery);
 
+
+
 const buttonSubmit = async () => {
   var name = document.getElementById("submit_nameInput").value;
   var email = document.getElementById("submit_emailInput").value;
@@ -179,3 +182,6 @@ async function postData(url = "", data = {}) {
   });
   return response.json(); // parses JSON response into native JavaScript objects
 }
+
+
+
